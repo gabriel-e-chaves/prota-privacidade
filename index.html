@@ -62,6 +62,14 @@
   .card p { margin:0; color:var(--muted); }
   footer { padding:32px 0 48px; color:var(--muted); font-size:14px; border-top:1px solid var(--line); }
   footer nav { display:flex; flex-wrap:wrap; gap:16px; margin-bottom:12px; }
+  .heroes { display:grid; grid-template-columns:repeat(auto-fill,minmax(96px,1fr)); gap:12px; margin:0 0 16px; padding:0; list-style:none; }
+  .heroes figure { margin:0; text-align:center; }
+  .heroes img { width:100%; height:auto; aspect-ratio:1; border-radius:12px; border:1px solid var(--line); background:var(--card); image-rendering:pixelated; }
+  .heroes figcaption { font-size:14px; color:var(--muted); margin-top:4px; }
+  .faq details { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:16px 20px; margin-bottom:12px; }
+  .faq summary { cursor:pointer; font-weight:700; min-height:28px; }
+  .faq p { margin:10px 0 0; color:var(--muted); }
+  .final { text-align:center; }
 </style>
 </head>
 <body>
@@ -77,12 +85,12 @@
         <h1>Seus hábitos viram um <em>RPG</em>.</h1>
         <p class="lead">Prota é um app de hábitos gamificado. Cada hábito vira uma missão, e cumprir dá XP, ouro e atributos para o seu personagem. Organize sua rotina, mantenha a ofensiva e suba de nível na vida real.</p>
         <a class="cta" href="https://play.google.com/store/apps/details?id=br.com.protagonista.app">Baixar grátis na Google Play</a>
-        <p class="note">Grátis e sem anúncios. Para Android.</p>
+        <p class="note">Grátis e sem anúncios, para Android. Compras de ouro são opcionais.</p>
       </div>
-      <div class="shots" aria-hidden="true">
-        <img src="/img/tela-missoes.png" alt="" loading="lazy" width="270" height="480">
-        <img src="/img/tela-inicio.png" alt="" width="270" height="480">
-        <img src="/img/tela-combates.png" alt="" loading="lazy" width="270" height="480">
+      <div class="shots">
+        <img src="/img/tela-missoes.webp" alt="Tela de missões do Prota" loading="lazy" width="270" height="480">
+        <img src="/img/tela-inicio.webp" alt="Tela inicial do Prota com a missão do dia" width="270" height="480" fetchpriority="high">
+        <img src="/img/tela-combates.webp" alt="Tela de combates do Prota" loading="lazy" width="270" height="480">
       </div>
     </div>
 
@@ -91,11 +99,54 @@
       <div class="grid">
         <div class="card"><h3>Missões diárias</h3><p>Uma missão por dia, do seu nível e da sua classe: leitura, estudo, treino, foco e organização.</p></div>
         <div class="card"><h3>Ofensiva sem culpa</h3><p>Acompanhe os dias seguidos. Dia de descanso e modo férias protegem sua sequência.</p></div>
-        <div class="card"><h3>Classes e evolução</h3><p>Comece como Guerreiro, Mago, Arqueiro ou Ladino e evolua por 50 classes até a elite.</p></div>
+        <div class="card"><h3>Classes e evolução</h3><p>Escolha o foco dos seus hábitos, comece numa das 7 classes básicas e evolua por 50 classes até a elite.</p></div>
         <div class="card"><h3>Combates</h3><p>Use seus atributos para vencer monstros como a Procrastinação e a Distração e ganhar itens.</p></div>
         <div class="card"><h3>Guildas</h3><p>Entre numa guilda de até 20 pessoas e derrotem juntos o chefe da semana.</p></div>
         <div class="card"><h3>Lembrete e widget</h3><p>Um lembrete só nos dias em que a missão ainda não foi feita, e a missão do dia na tela inicial.</p></div>
       </div>
+    </section>
+
+    <section aria-labelledby="herois">
+      <h2 id="herois">Escolha o seu herói</h2>
+      <ul class="heroes">
+        <li><figure><img src="/img/herois/guerreiro.webp" alt="Guerreiro em pixel art" width="192" height="192" loading="lazy"><figcaption>Guerreiro</figcaption></figure></li>
+        <li><figure><img src="/img/herois/mago-f.webp" alt="Maga em pixel art" width="192" height="192" loading="lazy"><figcaption>Maga</figcaption></figure></li>
+        <li><figure><img src="/img/herois/arqueiro.webp" alt="Arqueiro em pixel art" width="192" height="192" loading="lazy"><figcaption>Arqueiro</figcaption></figure></li>
+        <li><figure><img src="/img/herois/ladino-f.webp" alt="Ladina em pixel art" width="192" height="192" loading="lazy"><figcaption>Ladina</figcaption></figure></li>
+        <li><figure><img src="/img/herois/clerigo.webp" alt="Clérigo em pixel art" width="192" height="192" loading="lazy"><figcaption>Clérigo</figcaption></figure></li>
+        <li><figure><img src="/img/herois/bardo-f.webp" alt="Barda em pixel art" width="192" height="192" loading="lazy"><figcaption>Barda</figcaption></figure></li>
+        <li><figure><img src="/img/herois/artifice.webp" alt="Artífice em pixel art" width="192" height="192" loading="lazy"><figcaption>Artífice</figcaption></figure></li>
+      </ul>
+      <p class="lead">Cada classe tem versão masculina e feminina em pixel art. O retrato fica no seu Perfil, com moldura do seu rank e o brilho dos itens que você equipa.</p>
+    </section>
+
+    <section aria-labelledby="duvidas" class="faq">
+      <h2 id="duvidas">Perguntas frequentes</h2>
+      <details>
+        <summary>O que é um app de hábitos gamificado?</summary>
+        <p>É um app que usa elementos de jogo para ajudar você a manter uma rotina. No Prota, cada hábito vira uma missão; cumprir dá XP, ouro e atributos, e o seu personagem sobe de nível junto com você.</p>
+      </details>
+      <details>
+        <summary>O Prota é gratuito?</summary>
+        <p>Sim. O app é grátis e não tem anúncios. Dá para comprar ouro dentro do jogo, mas é opcional: todo o progresso vem das missões que você cumpre.</p>
+      </details>
+      <details>
+        <summary>E se eu perder um dia?</summary>
+        <p>Dias sem missão custam um pouco de XP e quebram a ofensiva. Para os dias de folga de verdade, você pode marcar um dia de descanso por semana ou ativar o modo férias, que protegem a sequência.</p>
+      </details>
+      <details>
+        <summary>Tem para iPhone?</summary>
+        <p>Por enquanto o Prota é só para Android, na Google Play.</p>
+      </details>
+      <details>
+        <summary>Meus dados ficam seguros?</summary>
+        <p>O Prota guarda só o necessário para o jogo funcionar e você pode excluir a conta quando quiser. Os detalhes estão na <a href="/privacidade/">Política de Privacidade</a>.</p>
+      </details>
+    </section>
+
+    <section class="final">
+      <h2>Comece hoje a sua primeira missão</h2>
+      <a class="cta" href="https://play.google.com/store/apps/details?id=br.com.protagonista.app">Baixar grátis na Google Play</a>
     </section>
   </main>
 
