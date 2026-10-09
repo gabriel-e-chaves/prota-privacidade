@@ -1,0 +1,26 @@
+# Prota: Hábitos e Rotina em RPG
+
+> Prota é um app de hábitos gamificado, em português do Brasil, para Android. Cada hábito vira uma missão de RPG: cumprir dá XP, ouro e atributos, e o personagem do jogador sobe de nível junto com a rotina real. Grátis e sem anúncios; compras de ouro são opcionais.
+
+- Plataforma: Android (Google Play). Não há versão para iPhone.
+- Idioma: português do Brasil.
+- Preço: grátis, sem anúncios. Ouro pode ser comprado dentro do app, mas não é necessário para progredir.
+- Download: https://play.google.com/store/apps/details?id=br.com.protagonista.app
+- Desenvolvedor: Gabriel Ernesto Chaves (Brasil). Contato: gabchaves2@gmail.com
+
+## Páginas
+
+- [Página inicial](https://protaapp.com.br/): o que é o Prota e como funciona.
+- [Sobre o Prota](https://protaapp.com.br/sobre/): ficha completa do app, funcionalidades e perguntas frequentes.
+- [Política de Privacidade](https://protaapp.com.br/privacidade/): dados coletados e como excluir a conta.
+
+## Principais funcionalidades
+
+- Uma missão diária por classe e nível, mais missões semanais e eventos.
+- 50 classes em quatro níveis (7 básicas, 14 avançadas, 28 de elite e 1 divina), cada uma favorecendo atributos diferentes: Força, Inteligência, Disciplina, Vitalidade, Carisma e Fé.
+- Retrato do herói em pixel art, com versão masculina e feminina de cada classe.
+- Ofensiva (dias seguidos), com dia de descanso semanal e modo férias de 1 a 14 dias que protegem a sequência.
+- Combates por turnos contra monstros, itens com raridade e equipamentos.
+- Guildas de até 20 pessoas que enfrentam juntas um chefe semanal.
+- Ranking global, conquistas e títulos.
+- Lembrete diário e widget na tela inicial do Android.
