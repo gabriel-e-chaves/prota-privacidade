@@ -29,7 +29,7 @@
   "url": "https://protaapp.com.br/",
   "downloadUrl": "https://play.google.com/store/apps/details?id=br.com.protagonista.app",
   "image": "https://protaapp.com.br/img/icone.png",
-  "description": "App de hábitos gamificado em português do Brasil. Cada hábito vira uma missão de RPG que dá XP, ouro e atributos ao personagem.",
+  "description": "App de hábitos gamificado em português do Brasil. Cada hábito vira uma missão de RPG que dá XP e atributos ao personagem.",
   "author": { "@type": "Person", "name": "Gabriel Ernesto Chaves" },
   "offers": { "@type": "Offer", "price": "0", "priceCurrency": "BRL" }
 }
@@ -64,6 +64,8 @@
   .card { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:20px; }
   .card h3 { margin:0 0 6px; font-size:18px; }
   .card p { margin:0; color:var(--muted); }
+  a.card { display:block; text-decoration:none; color:var(--fg); }
+  a.card:hover, a.card:focus-visible { border-color:var(--accent); }
   footer { padding:32px 0 48px; color:var(--muted); font-size:14px; border-top:1px solid var(--line); }
   footer nav { display:flex; flex-wrap:wrap; gap:16px; margin-bottom:12px; }
   .heroes { display:grid; grid-template-columns:repeat(auto-fill,minmax(96px,1fr)); gap:12px; margin:0 0 16px; padding:0; list-style:none; }
@@ -87,7 +89,7 @@
     <div class="hero">
       <div>
         <h1>Seus hábitos viram um <em>RPG</em>.</h1>
-        <p class="lead">Prota é um app de hábitos gamificado. Cada hábito vira uma missão, e cumprir dá XP, ouro e atributos para o seu personagem. Organize sua rotina, mantenha a ofensiva e suba de nível na vida real.</p>
+        <p class="lead">Prota é um app de hábitos gamificado. Cada hábito vira uma missão, e cumprir dá XP e atributos para o seu personagem. Organize sua rotina, mantenha a ofensiva e suba de nível na vida real.</p>
         <a class="cta" href="https://play.google.com/store/apps/details?id=br.com.protagonista.app">Baixar grátis na Google Play</a>
         <p class="note">Grátis e sem anúncios, para Android. Compras de ouro são opcionais.</p>
       </div>
@@ -110,6 +112,20 @@
       </div>
     </section>
 
+    <section aria-labelledby="objetivos">
+      <h2 id="objetivos">Escolha o seu objetivo</h2>
+      <div class="grid">
+        <a class="card" href="/rotina-de-estudos/"><h3>Rotina de estudos</h3><p>Leitura e estudo todo dia, com o Mago.</p></a>
+        <a class="card" href="/habito-de-treino/"><h3>Hábito de treino</h3><p>Treino em casa, sem equipamento, com o Guerreiro.</p></a>
+        <a class="card" href="/foco-e-organizacao/"><h3>Foco e organização</h3><p>Prioridades e menos procrastinação, com o Arqueiro.</p></a>
+        <a class="card" href="/mente-tranquila/"><h3>Mente tranquila</h3><p>Meditação, respiração e gratidão, com o Clérigo.</p></a>
+        <a class="card" href="/falar-em-publico/"><h3>Falar em público</h3><p>Voz, ritmo e narrativa, com o Bardo.</p></a>
+        <a class="card" href="/networking/"><h3>Networking</h3><p>Conversas e leitura de pessoas, com o Ladino.</p></a>
+        <a class="card" href="/tirar-projetos-do-papel/"><h3>Tirar projetos do papel</h3><p>Avançar no projeto um pouco por dia, com o Artífice.</p></a>
+      </div>
+      <p class="note">Veio do Habitica? Veja <a href="/alternativa-ao-habitica/">o Prota como alternativa em português</a>.</p>
+    </section>
+
     <section aria-labelledby="herois">
       <h2 id="herois">Escolha o seu herói</h2>
       <ul class="heroes">
@@ -128,7 +144,7 @@
       <h2 id="duvidas">Perguntas frequentes</h2>
       <details>
         <summary>O que é um app de hábitos gamificado?</summary>
-        <p>É um app que usa elementos de jogo para ajudar você a manter uma rotina. No Prota, cada hábito vira uma missão; cumprir dá XP, ouro e atributos, e o seu personagem sobe de nível junto com você.</p>
+        <p>É um app que usa elementos de jogo para ajudar você a manter uma rotina. No Prota, cada hábito vira uma missão; cumprir dá XP e atributos, e o seu personagem sobe de nível junto com você.</p>
       </details>
       <details>
         <summary>O Prota é gratuito?</summary>

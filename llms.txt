@@ -1,6 +1,6 @@
 # Prota: Hábitos e Rotina em RPG
 
-> Prota é um app de hábitos gamificado, em português do Brasil, para Android. Cada hábito vira uma missão de RPG: cumprir dá XP, ouro e atributos, e o personagem do jogador sobe de nível junto com a rotina real. Grátis e sem anúncios; compras de ouro são opcionais.
+> Prota é um app de hábitos gamificado, em português do Brasil, para Android. Cada hábito vira uma missão de RPG: cumprir dá XP e atributos, e o personagem do jogador sobe de nível junto com a rotina real. Grátis e sem anúncios; compras de ouro são opcionais.
 
 - Plataforma: Android (Google Play). Não há versão para iPhone.
 - Idioma: português do Brasil.
@@ -12,6 +12,14 @@
 
 - [Página inicial](https://protaapp.com.br/): o que é o Prota e como funciona.
 - [Sobre o Prota](https://protaapp.com.br/sobre/): ficha completa do app, funcionalidades e perguntas frequentes.
+- [Rotina de estudos](https://protaapp.com.br/rotina-de-estudos/): Leitura e estudo todo dia, com o Mago.
+- [Hábito de treino](https://protaapp.com.br/habito-de-treino/): Treino em casa, sem equipamento, com o Guerreiro.
+- [Foco e organização](https://protaapp.com.br/foco-e-organizacao/): Prioridades e menos procrastinação, com o Arqueiro.
+- [Mente tranquila](https://protaapp.com.br/mente-tranquila/): Meditação, respiração e gratidão, com o Clérigo.
+- [Falar em público](https://protaapp.com.br/falar-em-publico/): Voz, ritmo e narrativa, com o Bardo.
+- [Networking](https://protaapp.com.br/networking/): Conversas e leitura de pessoas, com o Ladino.
+- [Tirar projetos do papel](https://protaapp.com.br/tirar-projetos-do-papel/): Avançar no projeto um pouco por dia, com o Artífice.
+- [Alternativa ao Habitica em português](https://protaapp.com.br/alternativa-ao-habitica/): comparação do Prota com quem procura um RPG de hábitos em português.
 - [Política de Privacidade](https://protaapp.com.br/privacidade/): dados coletados e como excluir a conta.
 
 ## Principais funcionalidades
