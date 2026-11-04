@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prota</title>
+<meta name="robots" content="noindex">
+<link rel="icon" type="image/png" href="/img/icone.png">
+<meta name="theme-color" content="#050806">
+<style>
+  :root { --bg:#050806; --card:#0c1210; --fg:#e8f3ee; --muted:#a3bdb1; --accent:#00e576; --line:#1c2a24; }
+  * { box-sizing:border-box; }
+  body { margin:0; min-height:100vh; display:flex; align-items:center; justify-content:center; padding:24px 16px;
+         background:var(--bg); color:var(--fg); font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
+  main { width:100%; max-width:420px; text-align:center; background:var(--card); border:1px solid var(--line); border-radius:20px; padding:32px 24px; }
+  img.icone { width:88px; height:88px; border-radius:20px; }
+  h1 { font-size:24px; line-height:1.25; margin:16px 0 8px; }
+  p { color:var(--muted); margin:0 0 16px; }
+  .codigo { display:inline-block; font:700 22px/1 ui-monospace,Consolas,monospace; letter-spacing:4px; color:var(--accent);
+            border:1px dashed var(--accent); border-radius:12px; padding:12px 16px; margin:4px 0 20px; }
+  a.botao { display:flex; align-items:center; justify-content:center; min-height:48px; border-radius:999px; font-weight:700;
+            text-decoration:none; margin-top:12px; }
+  a.principal { background:var(--accent); color:#04140b; }
+  a.secundario { border:1px solid var(--line); color:var(--fg); }
+  .dica { font-size:14px; margin-top:16px; }
+  [hidden] { display:none !important; }
+</style>
+</head>
+<body>
+<main>
+  <img class="icone" src="/img/icone.png" alt="Prota">
+
+  <!-- Convite de guilda: https://protaapp.com.br/g/<código>. Com o app instalado e
+       o assetlinks.json no ar, o Android abre o app direto e esta página nem aparece. -->
+  <section id="convite" hidden>
+    <h1>Você foi convidado para uma guilda no Prota</h1>
+    <p>No Prota, cada missão sua tira vida do chefe da semana da guilda.</p>
+    <div class="codigo" id="codigo" aria-label="Código do convite"></div>
+    <a class="botao principal" id="abrir" href="#">Abrir no app</a>
+    <a class="botao secundario" href="https://play.google.com/store/apps/details?id=br.com.protagonista.app">Baixar na Google Play</a>
+    <p class="dica">Acabou de instalar? Toque de novo no link do convite para entrar na guilda.</p>
+  </section>
+
+  <section id="nada">
+    <h1>Página não encontrada</h1>
+    <p>Esse endereço não existe.</p>
+    <a class="botao principal" href="/">Conhecer o Prota</a>
+  </section>
+</main>
+<script>
+  // Mesmo formato de src/lib/game/guildInviteLink.ts: 8 caracteres sem 0, O, 1 e I.
+  var m = location.pathname.match(/^\/g\/([A-HJ-NP-Za-hj-np-z2-9]{8})\/?$/);
+  if (m) {
+    var codigo = m[1].toUpperCase();
+    var play = "https://play.google.com/store/apps/details?id=br.com.protagonista.app";
+    document.title = "Convite de guilda | Prota";
+    document.getElementById("codigo").textContent = codigo;
+    document.getElementById("abrir").href =
+      "intent://protaapp.com.br/g/" + codigo +
+      "#Intent;scheme=https;package=br.com.protagonista.app;S.browser_fallback_url=" + encodeURIComponent(play) + ";end";
+    document.getElementById("convite").hidden = false;
+    document.getElementById("nada").hidden = true;
+  }
+</script>
+</body>
+</html>

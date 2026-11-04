@@ -1,0 +1,14 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "br.com.protagonista.app",
+      "sha256_cert_fingerprints": [
+        "94:9D:85:11:BB:C7:82:48:17:4F:57:75:0F:C3:F1:C7:66:EE:AD:86:90:6D:CA:36:6D:5E:45:A8:B8:2E:E6:80",
+        "CF:FB:F8:84:E9:A3:11:8B:27:87:80:0F:B5:A5:9D:4D:85:02:49:D1:68:2D:EB:11:9A:34:E1:A6:9B:B8:58:1E",
+        "62:1D:31:FE:99:F0:E0:E7:2C:4C:02:98:D5:84:93:BA:BE:E4:B6:FA:88:4A:B4:46:80:97:D5:A6:F2:2F:D8:31"
+      ]
+    }
+  }
+]
